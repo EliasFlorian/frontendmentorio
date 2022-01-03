@@ -167,6 +167,7 @@ body {
     color: rgb(var(--clr-white) );
     background-color: rgb(var(--clr-dark-main-bg) );
     height: 100vh;
+    padding: 3.875rem 1.5rem;
 }
 
 
@@ -176,16 +177,52 @@ body {
     display: flex;
 }
 
-.grid-container {
-    display: grid;
-    padding: 1.53rem;
+.container-card {
+  background-color: rgb(var(--clr-dark-card-bg) );
+  padding: 1.5rem;
+  border-radius: 15px;
 }
 
-.grid-container--eth {
-    grid-template-areas: 
-        'image'
-        'heading'
-        'paragraph'
-        ;
+div > img {
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
+.img-user {
+  width: 33px;
+  border: .5px solid rgb( var(--clr-white) );
+  border-radius: 50%;
+}
+
+.heading {
+  color: rgb( var(--clr-white) );
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph-subHeading {
+  color: rgb( var(--clr-soft-blue) );
+  font-size: var(--fs-500);
+  font-weight: 300;
+  margin-bottom: 22px;
+}
+
+.flex-content {
+  justify-content: space-between;
+}
+
+.inline {
+  display: inline;
+}
+
+.content-credit {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: .5px solid rgb( var(--clr-dark-line) );
+  gap: 1rem;
+  align-content: center;
+}
+
+.content-credit > img {
+  margin: 0;
+}
