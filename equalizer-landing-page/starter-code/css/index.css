@@ -1,0 +1,168 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/* ==================== custom properties ==================== */
+
+html {
+    /* colors */
+    --clr-light-blue: 102 226 220;
+    --clr-orange: 250 116 83;
+    --clr-light-orange: 255 185 100;
+    --clr-black: 25 24 38;
+    --clr-white: 252 250 249;
+    
+    /* font-sizes */
+    
+    --fs-heading: 8.8rem;
+    --fs-heading-sub: 4rem;
+    --fs-body: 2rem; 
+    --fs-body-sub: 1.6rem;
+
+    --lh-heading-sub: 5.2rem;
+    --lh-body: 3.4rem;
+    --lh-body-sub: 2.6rem;
+
+    --letter-spacing: -0.1rem;
+
+
+    /* z-index */
+
+    --z-index-top: 10;
+    --z-index-middle: 5;
+    --z-index-bottom: 1;
+
+    /* border radius */
+
+    --br: 1.2rem;
+    
+    /* font-families */
+    font-family: 'IBM Plex Sans', sans-serif;
+}  
+
+body {
+    background-color: rgb(var(--clr-white) );
+    background-image: url(/assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background-position: 100px -150px;
+}
+
+/* container top */
+.container-top {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4rem;
+}
+
+.logo-top {
+    margin: 4rem 0;
+}
+
+.heading-top {
+    font-size: var(--fs-heading-sub);
+    font-weight: 700;
+    line-height: var(--lh-heading-sub);
+    margin-bottom: 2rem;
+}
+
+.paragraph-top {
+    font-size: var(--fs-body-sub);
+    line-height: var(--lh-body-sub);
+    margin-bottom: 6.8rem ;
+}
+
+/* container middle */
+
+.container-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.element-top {
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+.element-top >img {
+    width: 55.7%;
+}
+
+.element-middle {
+    display: flex;
+    justify-content: center; 
+    background-color: rgb(var(--clr-black) );
+    width: 100%;
+    border-radius: var(--br);
+    margin-top: -33.2rem;
+    z-index: 1;
+}
+
+.element-middle >img {
+    width: 74.6%;
+}
+
+
+
+.grid {
+    display: grid;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    gap: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    border-radius: var(--br);
+    width: 78%;
+}
+
+.btn-android {
+    color: rgb(var(--clr-black) );
+    background-color: rgb(var(--clr-white) );
+}
+.btn-android:hover {
+    color: rgb(var(--clr-black) );
+    background-color: rgb(var(--clr-soft-orange) );
+}
+
+.btn-ios {
+    color: rgb(var(--clr-white) );
+    background-color: rgb(var(--clr-black) );
+}
+.btn-ios:hover {
+    color: rgb(var(--clr-white) );
+    background-color: rgb(var(--clr-soft-blue) );
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+
+        --fs-600: 1.375rem;
+        --fs-500: 1.125rem;
+        --fs-400: 1rem;
+        --fs-300: .9375rem;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    :root {
+
+        --fs-600: 1.375rem;
+        --fs-500: 1.125rem;
+        --fs-400: 1rem;
+        --fs-300: .9375rem;
+    }
+}
