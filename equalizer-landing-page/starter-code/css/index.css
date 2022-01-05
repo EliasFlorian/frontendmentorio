@@ -42,13 +42,8 @@ html {
 body {
     background-color: rgb(var(--clr-white) );
     background-image: url(/assets/bg-main-mobile.png);
-    background-repeat: no-repeat;
     background-size: cover;
 
-    width: 100%;
-    min-height: 100vh;
-
-    background-position: 100px -150px;
 }
 
 /* container top */
@@ -109,6 +104,67 @@ body {
     width: 74.6%;
 }
 
+.element-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(var(--clr-orange) );
+    color: rgb(var(--clr-white) );
+    padding: 0 3.7rem;
+    border-radius: var(--br);
+    margin-top: -4rem;
+    z-index: 10;
+}
+
+.element-bottom-heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-top: 4.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.element-bottom-paragraph {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 3.6rem;
+}
+
+.element-bottom-paragraph > span {
+    font-size: 5.2rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+}
+
+
+/* container bottom */
+.container-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4rem;
+}
+
+.logo-bottom {
+    margin: 6.4rem 0 3.2rem 0;
+}
+
+.text-content-bottom {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    max-width: 31ch;
+    margin-bottom: 6.4rem;
+}
+
+.text-content-bottom > span {
+    font-weight: 700;
+}
+
+.img-social {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+
 
 
 .grid {
@@ -126,43 +182,119 @@ body {
     font-weight: 700;
     line-height: 3.2rem;
     border-radius: var(--br);
-    width: 78%;
+    width: 100%;
 }
 
 .btn-android {
     color: rgb(var(--clr-black) );
     background-color: rgb(var(--clr-white) );
+    margin-bottom: 4.8rem;
 }
 .btn-android:hover {
     color: rgb(var(--clr-black) );
-    background-color: rgb(var(--clr-soft-orange) );
+    background-color: rgb(var(--clr-light-orange) );
 }
 
 .btn-ios {
     color: rgb(var(--clr-white) );
     background-color: rgb(var(--clr-black) );
+    margin-bottom: 1.6rem;
 }
 .btn-ios:hover {
     color: rgb(var(--clr-white) );
-    background-color: rgb(var(--clr-soft-blue) );
+    background-color: rgb(var(--clr-light-blue) );
 }
 
 @media only screen and (min-width: 768px) {
-    :root {
+    
 
-        --fs-600: 1.375rem;
-        --fs-500: 1.125rem;
-        --fs-400: 1rem;
-        --fs-300: .9375rem;
+
+    /* middle section */
+
+    .container-middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 3.3rem;
+        max-width: 100vw;
     }
+    
+    .element-top {
+        display: flex;
+        margin-right: 30rem;
+
+        z-index: 5;
+    }
+    
+    .element-top >img {
+        width: 27rem;
+    }
+
+
+    
+    .element-middle {
+        display: flex;
+        justify-content: center; 
+        background-color: rgb(var(--clr-black) );
+        border-radius: var(--br);
+        margin-top: -41rem;
+        z-index: 1;
+        padding: 0rem 0 21.9rem;
+    
+    }
+    
+    .element-middle >img {
+        width: 41%;
+        margin-top: -3.5rem;
+    }
+    
+    .element-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 399px;
+        background-color: rgb(var(--clr-orange) );
+        color: rgb(var(--clr-white) );
+        padding: 0 4.4rem;
+        border-radius: var(--br);
+        margin-right: -18rem;
+        margin-top: -44rem;
+        z-index: 10;
+    }
+    
+    .element-bottom-heading {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 4rem;
+        margin-top: 4.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .element-bottom-paragraph {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin-bottom: 3.6rem;
+    }
+    
+    .element-bottom-paragraph > span {
+        font-size: 5.2rem;
+        font-weight: 700;
+        margin-bottom: 3.2rem;
+    } 
+
+
+
+    /* bottom section */
+    .container-bottom {
+        flex-direction: row;
+    }
+
+    .img-social {
+
+    }
+
 }
 
 @media only screen and (min-width: 1366px) {
-    :root {
-
-        --fs-600: 1.375rem;
-        --fs-500: 1.125rem;
-        --fs-400: 1rem;
-        --fs-300: .9375rem;
-    }
+   
 }
