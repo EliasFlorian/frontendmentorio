@@ -206,6 +206,38 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+
+
+    body {
+        background-image: url(/assets/bg-main-tablet.png);
+        background-position: top -55.5rem left -60rem;
+    }
+
+
+    /* top selection */
+
+    .container-top {
+        background-image: url(/assets/bg-pattern-1.svg);
+        background-repeat: no-repeat;
+        background-position: top -3.2rem right -3.5rem;
+    }
+
+    .logo-top {
+        margin: 6.2rem 0 9.5rem;
+    }
+    
+    .heading-top {
+        
+        max-width: 12ch;
+    }
+    
+    .paragraph-top {
+        
+        margin-bottom: 11.1rem ;
+        padding-right: 26.5rem;
+    }
+
+
     
 
 
@@ -287,11 +319,45 @@ body {
     /* bottom section */
     .container-bottom {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 3.3rem;
+        padding: 0;
+        align-items: center;
+        margin-bottom: 8.5rem;
     }
 
+    .bottom-item-1 {
+        width: 90vw;
+    }
+    
+    .logo-bottom {
+        margin: 6.4rem 0 3.2rem 0;
+    }
+    
+    .text-content-bottom {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        max-width: 35ch;
+        margin-bottom: 0;
+    }
+    
+    .text-content-bottom > span {
+        font-weight: 700;
+    }
+    
     .img-social {
-
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 0;
     }
+
+    .item-img-social {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    
 
 }
 
