@@ -171,10 +171,11 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     margin-bottom: 4.8rem;
-    overflow: visible;
+    overflow: hidden;
+    /* object-fit: fill; */
 }
 .container-img-hero > img {
-    width: 126%;
+    width: 110.5%;
     height: auto;
 }
 
@@ -216,12 +217,13 @@ body::-webkit-scrollbar {
     gap: 2.5rem;
 }
 .container-middle-img * li {
-    width: 46%;
+    /* width: 46%; */
+    flex: 1 1 10rem;
 }
 
 
 .container-middle-img * img {
-    width: 100%;
+    /* width: 100%; */
     border-radius: 10px;
 }
 
@@ -250,10 +252,27 @@ body::-webkit-scrollbar {
 
 .container-footer-back-img {
     background-image: url("assets/mobile/image-footer.jpg");
-    background-position:;
+    background-blend-mode: multiply;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
     margin-top: -2.9rem;
     padding-inline: 5.2rem;
+    position: relative;
+    z-index: -1;
 }
+
+.container-footer-back-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(var(--clr-dark-blue) / .9);
+    z-index: -1;
+}
+
 
 .padd-top92 {
     padding-top: 9.2rem;
@@ -264,3 +283,177 @@ body::-webkit-scrollbar {
     
 }
 
+.display-none-mob {
+    display: none;
+}
+
+
+@media only screen and (min-width: 720px) {
+    .container-top {
+        padding-inline: 18rem;
+    }
+
+    .btn-gap {
+        margin-right: 1.6rem;
+    }
+
+    .container-bottom-text {
+        padding-inline: 10rem;
+        
+    }
+
+    .heading-max-ch {
+        padding-inline: 11rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1366px) {
+
+    .display-none-mob {
+        display: inline;
+    }
+
+    .display-none-desktop {
+        display: none;
+    }
+
+    .container-top {
+        padding-inline: 0;
+    }
+
+    .container-top-desktop {
+        display: flex;
+    }
+
+    .flex-desktop {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 9rem;
+        padding-top: 4rem;
+    }
+
+    .text-heading-1 {
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+        font-weight: 900;
+    }
+    
+    .text-heading-2 {
+        font-size: 4rem;
+        line-height: 4.4rem;
+        font-weight: 900;
+    }
+    
+    .text-overline {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        font-weight: 900;
+        letter-spacing: .4rem;
+        text-transform: uppercase;
+        color: rgb(var(--clr-dark-blue) );
+    }
+    
+    .text-body {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        font-weight: 500;
+    }
+
+    
+
+    
+    .hero-img-top {
+        width: 150%;
+        height: auto;
+    }
+
+    .hero-img-left {
+        margin-left: -4rem;
+        
+    }
+
+    .hero-img-left > img {
+       width: fit-content;
+    }
+
+    .hero-img-right {
+        margin-right: -4rem;
+        
+    }
+
+    .hero-img-right > img {
+        width: fit-content;
+
+    }
+
+    .container-middle-img {
+        padding-inline: 16.5rem; 
+    }
+
+    .container-btn-round {
+        margin-top: 8rem;
+    }
+
+    .container-bottom-text {
+        padding-inline: 40rem;
+    }
+
+    .container-bottom-text > p{
+        padding-inline: 6rem;
+    }
+
+    .container-btn-round-footer-desktop {
+        margin-top: 4rem;
+    }
+
+    .container-footer-back-img {
+        display: flex;
+        background-image: url("assets/desktop/image-footer.jpg");
+        background-blend-mode: multiply;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 10%;
+        margin-top: -2.9rem;
+
+
+        padding: 11.6rem 10rem;
+
+
+        position: relative;
+        z-index: -1;
+
+        /* align-items: center; */
+        justify-content: space-between;
+
+    }
+
+    .container-footer-back-img > h2 {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    .container-footer-back-img > p {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        max-width: 29ch; 
+
+    }
+     
+
+    .marg-bot72 {
+        margin-bottom: 0;
+    }
+
+    .btn-footer {
+        margin-top: 2rem;
+        margin-bottom: 2rem;   
+    }
+    
+    
+        
+
+
+}

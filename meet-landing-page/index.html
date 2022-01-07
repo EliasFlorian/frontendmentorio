@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="index.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Meet landing page</title>
 </head>
@@ -27,22 +27,31 @@
   </header>
 
   <main>
-    <section class="container-top">
-      <div class="container-img-hero">
+    <section>
+      <div class="display-none-desktop container-img-hero">
         <img src="assets/tablet/image-hero.png" alt="">
       </div>
+    </section>
 
-      <div>
-        <h1 class="marg-bot24 text-heading-1">Group Chat<br>for Everyone</h1>
-        <p class="marg-bot32 text-body">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-      </div>
+    <section class="container-top">
+      <div class="container-top-desktop">
+        <div class="display-none-mob hero-img-left">
+          <img src="assets/desktop/image-hero-left.png" alt="" class="hero-img-top ">
+        </div>
+          <div class="flex-desktop">
+            <div>
+              <h1 class="marg-bot24 text-heading-1">Group Chat<br>for Everyone</h1>
+              <p class="marg-bot32 text-body">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+            </div>
 
-      <div>
-        <button class="marg-bot16 btn-main-big">Download <span>v1.3</span></button>
-      </div>  
-
-      <div>
-        <button class="marg-bot64 btn-main-middle">What is it?</button>
+            <div class="btn-gap">
+              <button class="btn-gap marg-bot16 btn-main-big">Download <span>v1.3</span></button>
+              <button class="marg-bot64 btn-main-middle">What is it?</button>
+            </div>
+          </div>
+        <div class="display-none-mob hero-img-right">
+          <img src="assets/desktop/image-hero-right.png" alt="" class="hero-img-top ">
+        </div>
       </div>
 
       <div class="container-btn-round">
@@ -74,7 +83,7 @@
     <section>
       <div class="container-bottom-text">
         <h3 class="marg-bot24 text-overline">Built for modern use</h3>
-        <h2 class="marg-bot32 text-heading-2">Smarter meetings, all in one place</h2>
+        <h2 class="heading-max-ch marg-bot32 text-heading-2">Smarter meetings, all in one place</h2>
         <p class="marg-bot64 text-body">Send messages, share files, show your screen, and record your meetings - all in one workspace. Control who can join with invite-only team access, data encryption, and data export</p>
       </div>
     </section>
@@ -84,7 +93,7 @@
 
     <section class="container-footer">
 
-      <div class="container-btn-round">
+      <div class="container-btn-round container-btn-round-footer-desktop">
         <div class="btn-line"></div>
         <button class="btn-round">02 </button>
       </div>
