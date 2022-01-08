@@ -1,2 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
+html {
+    
+    /* colors */
+
+    --clr-dark: rgb(77, 79, 100);
+    --clr-blue: rgb(60, 158, 249);
+    --clr-orange: rgb(255, 171, 41);
+    --clr-aqua: rgb(0, 214, 212);
+    --clr-red: rgb(252, 68, 77);
+    --clr-bg-white: rgb(250, 250, 250);
+    --clr-card-white: rgb(255, 255, 255);
+    
+    /* border radius */
+    --br-card: .8rem;
+    
+    /* font family Poppins 200 / 400 / 600 */
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--clr-bg-white);
+    min-height: 100vh;
+    color: var(--clr-dark);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+ /* utility classes  */
+
+.text-heading-1 {
+     font-size: clamp(2.4rem, 3vw + 1rem, 3.6rem);
+     font-weight: 600;
+     letter-spacing: clamp(0.017rem, 3vw + 1rem, 0.025rem);
+     margin-bottom: min(1.3rem);
+ }
+
+.text-heading-2 {
+     font-size: clamp(2.4rem, 3vw + 1rem, 3.6rem);
+     font-weight: 200;
+     letter-spacing: clamp(0.017rem, 3vw + 1rem, 0.025rem);
+     margin-bottom: min(1rem);
+ }
+
+.text-heading-3 {
+     font-size: 2rem;
+     font-weight: 600;
+     margin-bottom: 1rem;
+ }
+
+.text-body-head {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 2.5rem; 
+    color: rgb(163, 165, 175);
+ }
+
+.text-body-card {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: 0.009rem;
+    color: rgb(163, 165, 175);  
+ }
+
+ /* layout */
+
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.container-head-content {
+     text-align: center;
+     padding: 0 3.2rem;
+     margin: 8.5rem 0 7.6rem;
+ }
+
+ .container-card-wrapper {
+     display: flex;
+     flex-direction: column;
+     gap: 2.5rem;
+     padding: 0 3.2rem;
+     margin-bottom: 7.8rem;
+ }
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    background-color: var(--clr-card-white);
+    border-radius: var(--br-card);
+    box-shadow: 0px 2px 15px rgba(60, 158, 249, 0.144);
+    padding: 2.8rem;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 57px;
+    aspect-ratio: 1;
+    margin-top: 3rem;
+    margin-left: auto;
+}
+
+.card-supervisor {
+    border-top: .5rem solid rgb(0, 214, 212);
+}
+.card-team {
+    border-top: .5rem solid rgb(252, 68, 77);
+}
+.card-karma {
+    border-top: .5rem solid rgb(255, 171, 41);
+}
+.card-calculator {
+    border-top: .5rem solid rgb(60, 158, 249);
+}
+
