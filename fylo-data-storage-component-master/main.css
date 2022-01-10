@@ -187,7 +187,35 @@ body {
         height: 15.4rem;
         margin-top: 4.7rem;
     }
+
+    .progress-bar {
+        width: 45.9rem;
+    }
+
+    .inner-progress-bar {
+        width: 73.8%;
+    }
+
+    .card-2-content {
+        text-align: left;
+    }
     
+    .card-2-bubble {
+        top: -4.7rem;
+        left: 32.1rem;
+        right: 4rem;
+    }
+
+    .card-2::after {
+        position: absolute;
+        content: '';
+        border-left: 20px solid transparent;
+        border-right: 20px solid white;
+        border-bottom: 20px solid transparent;
+        border-top: 20px solid transparent;
+        top: .5rem;
+        right: 4rem;
+    }
 }
 
 
