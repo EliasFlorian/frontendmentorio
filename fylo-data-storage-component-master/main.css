@@ -24,7 +24,7 @@ body {
     display: grid;
     place-content: center;
     margin-inline: auto;
-    background-image: url(images/bg-mobile.png);
+    background-image: url("images/bg-mobile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -170,7 +170,7 @@ body {
 @media only screen and (min-width: 1365px) {
 
     body {
-        background-image: url(images/bg-desktop.png);
+        background-image: url("images/bg-desktop.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
