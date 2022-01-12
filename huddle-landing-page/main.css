@@ -1,0 +1,45 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+
+
+:root {
+
+    /* colors */
+    --clr-pink: 322 100% 66%;
+    --clr-very-pale-cyan: 193 100% 96%;
+    --clr-very-dark-cyan: 192 100% 9%;
+    --clr-grayish-blue: 208 11% 55%;
+
+
+    /* font-families */ 
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+
+    /* font-size */
+    --fs-body: 1.8rem;
+}
+
+/* components */
+
+.btn {
+
+}
+
+.showcase {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(var(--clr-very-pale-cyan));
+    background-image: url("images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    min-height: 7.8rem;
+
+}
+
