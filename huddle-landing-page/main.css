@@ -20,6 +20,10 @@
     --fs-body: 1.8rem;
 }
 
+body {
+    font-family: var(--ff-open-sans);
+}
+
 /* components */
 
 .btn {
@@ -58,5 +62,50 @@
     font-size: 1rem;
     font-weight: 600;
     text-transform: capitalize;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    padding: 3.7rem 3.5rem;
+}
+
+.showcase-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.showcase-text > h1 {
+    font-family: var(--ff-poppins);
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+}
+
+.btn-primary {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(var(--clr-pink));
+    padding: 1rem 6rem 1.4rem 6rem;
+    margin: 3.2rem 3.2rem 5.6rem 3.2rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    border: solid 1rem hsl(0, 0, 59);
+    margin: 4rem 2rem;
+    padding: 2.4rem 4rem 3.5rem 4rem;
+    border-radius: 1.6rem;
+
 }
 
