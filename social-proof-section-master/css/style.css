@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 html,
 body,
 div,
@@ -167,8 +168,136 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+* {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  margin-inline: 1.6rem;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8rem;
+  gap: 1.6rem;
+}
+
+.description h1 {
+  font-size: clamp(3.2rem, 5vw, 4.8rem);
+  font-weight: 700;
+  max-width: 12ch;
+  color: #502050;
+}
+
+.description p {
+  max-width: 27ch;
+  line-height: 2.5rem;
+  color: #937b92;
+}
+
+.reviews {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.6rem;
+  margin-top: 4rem;
+}
+
+.reviews .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.6rem 6.1rem;
+  gap: 1.6rem;
+  background-color: #f7f2f7;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #502050;
+}
+
+.reviews .card .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.845rem;
+}
+
 .reviews img {
   width: 1.655rem;
+}
+
+.buyer {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.6rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.buyer .card {
+  display: -ms-grid;
+  display: grid;
+  gap: 2.6rem;
+  text-align: left;
+  padding: 4rem 3.2rem 3.2rem 3.2rem;
+  background-color: #502050;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+.buyer .card .buyer-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.buyer .card .buyer-head .buyer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.buyer .card .buyer-head .buyer-text p {
+  font-weight: 700;
+}
+
+.buyer .card .buyer-head .buyer-text p:last-child {
+  color: #ee68a4;
+  font-weight: 400;
 }
 
 .buyer img {

@@ -1,13 +1,106 @@
 @import "reset";
 @import "config";
 
+* {
+  font-family: $font-stack;
+  font-size: 1.5rem;
+  // outline: 1px solid red;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  margin-inline: 1.6rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 1.6rem;
+
+  h1 {
+    font-size: clamp(3.2rem, 5vw, 4.8rem);
+    font-weight: 700;
+    max-width: 12ch;
+    color: $primary-color-dark;
+  }
+
+  p {
+    max-width: 27ch;
+    line-height: 2.5rem;
+    color: $neutral-color-dark;
+  }
+}
+
 .reviews {
+  display: grid;
+  gap: 1.6rem;
+  margin-top: 4rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem 6.1rem;
+    gap: 1.6rem;
+    background-color: $neutral-color-light;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $primary-color-dark;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      gap: 0.845rem;
+    }
+  }
+
   img {
     width: 1.655rem;
   }
 }
 
 .buyer {
+  display: grid;
+  gap: 1.6rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+
+  .card {
+    display: grid;
+    gap: 2.6rem;
+    text-align: left;
+    padding: 4rem 3.2rem 3.2rem 3.2rem;
+    background-color: $primary-color-dark;
+    border-radius: 0.8rem;
+    color: $neutral-color-white;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+
+    .buyer-head {
+      display: flex;
+      gap: 2.4rem;
+
+      .buyer-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+          font-weight: 700;
+
+          &:last-child {
+            color: $primary-color-light;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
   img {
     width: 4rem;
     border-radius: 50%;
