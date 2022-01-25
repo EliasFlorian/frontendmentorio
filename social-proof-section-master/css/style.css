@@ -173,6 +173,20 @@ html:focus-within {
   font-size: 1.5rem;
 }
 
+.bg-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-img-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 main {
   display: -ms-grid;
   display: grid;
@@ -263,7 +277,7 @@ main {
   display: grid;
   gap: 2.6rem;
   text-align: left;
-  padding: 4rem 3.2rem 3.2rem 3.2rem;
+  padding: 4rem 3.5rem 3.2rem 3.5rem;
   background-color: #502050;
   border-radius: 0.8rem;
   color: white;
