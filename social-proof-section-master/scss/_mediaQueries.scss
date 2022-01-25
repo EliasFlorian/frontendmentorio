@@ -1,0 +1,35 @@
+@media only screen and (min-width: 1028px) {
+  main {
+    margin: 12.5rem 16.5rem 10rem 16.5rem;
+    grid-template-areas:
+      "text review"
+      "buyer buyer";
+
+    .description {
+      grid-area: text;
+      margin: 0;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-area: review;
+      margin: 0;
+
+      .card {
+        width: 80%;
+      }
+    }
+
+    .reviews:first-child {
+      align-items: flex-end;
+    }
+
+    .buyer {
+      grid-area: buyer;
+    }
+  }
+}

@@ -4,7 +4,7 @@
 * {
   font-family: $font-stack;
   font-size: 1.5rem;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 .bg-img-top {
@@ -21,16 +21,11 @@
   z-index: -1;
 }
 
-// .bg-img-container {
-//   position: relative;
-
-// }
-
 main {
   display: grid;
   place-content: center;
   text-align: center;
-  margin-inline: 1.6rem;
+  margin: 0 1.6rem;
 }
 
 .description {
@@ -125,3 +120,5 @@ main {
     border-radius: 50%;
   }
 }
+
+@import "mediaQueries";
