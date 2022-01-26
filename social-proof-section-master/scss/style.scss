@@ -4,7 +4,11 @@
 * {
   font-family: $font-stack;
   font-size: 1.5rem;
-  outline: 1px solid red;
+  // outline: 1px solid red;
+}
+
+body {
+  position: relative;
 }
 
 .bg-img-top {
@@ -12,13 +16,21 @@
   top: 0;
   left: 0;
   z-index: -1;
+
+  .img-desktop {
+    visibility: hidden;
+  }
 }
 
 .bg-img-bottom {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   z-index: -1;
+
+  .img-desktop {
+    visibility: hidden;
+  }
 }
 
 main {

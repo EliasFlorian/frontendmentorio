@@ -1,6 +1,25 @@
 @media only screen and (min-width: 1028px) {
+  .bg-img-top {
+    .img-mobile {
+      display: none;
+    }
+
+    .img-desktop {
+      visibility: visible;
+    }
+  }
+  .bg-img-bottom {
+    .img-mobile {
+      display: none;
+    }
+    .img-desktop {
+      visibility: visible;
+    }
+  }
+
   main {
-    margin: 12.5rem 16.5rem 10rem 16.5rem;
+    height: 100vh;
+    margin: 0 16.5rem 0 16.5rem;
     grid-template-areas:
       "text review"
       "buyer buyer";
@@ -10,17 +29,35 @@
       margin: 0;
       align-items: flex-start;
       text-align: left;
+      justify-content: space-between;
+
+      p {
+        max-width: 38ch;
+      }
     }
 
     .reviews {
       display: flex;
       flex-direction: column;
-      align-items: center;
+
       grid-area: review;
       margin: 0;
+      padding: 1.6rem 0;
 
       .card {
         width: 80%;
+        flex-direction: row;
+        padding: 2rem 2rem;
+      }
+
+      .two {
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .three {
+        margin-left: 20%;
       }
     }
 
@@ -30,6 +67,30 @@
 
     .buyer {
       grid-area: buyer;
+      display: flex;
+      flex-direction: row;
+      margin: 7.2rem 0 0 0;
+      gap: 3rem;
+
+      .card {
+        padding: 4rem 3.2rem 3.5rem 3.2rem;
+
+        * {
+          font-size: 1.3rem;
+        }
+      }
+
+      .card:first-child {
+        margin-bottom: 3.2rem;
+      }
+
+      .card:nth-child(2) {
+        margin-block: 1.6rem;
+      }
+
+      .card:last-child {
+        margin-top: 3.2rem;
+      }
     }
   }
 }

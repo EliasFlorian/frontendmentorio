@@ -171,7 +171,10 @@ html:focus-within {
 * {
   font-family: "Spartan", sans-serif;
   font-size: 1.5rem;
-  outline: 1px solid red;
+}
+
+body {
+  position: relative;
 }
 
 .bg-img-top {
@@ -181,11 +184,19 @@ html:focus-within {
   z-index: -1;
 }
 
+.bg-img-top .img-desktop {
+  visibility: hidden;
+}
+
 .bg-img-bottom {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   z-index: -1;
+}
+
+.bg-img-bottom .img-desktop {
+  visibility: hidden;
 }
 
 main {
@@ -321,8 +332,21 @@ main {
 }
 
 @media only screen and (min-width: 1028px) {
+  .bg-img-top .img-mobile {
+    display: none;
+  }
+  .bg-img-top .img-desktop {
+    visibility: visible;
+  }
+  .bg-img-bottom .img-mobile {
+    display: none;
+  }
+  .bg-img-bottom .img-desktop {
+    visibility: visible;
+  }
   main {
-    margin: 12.5rem 16.5rem 10rem 16.5rem;
+    height: 100vh;
+    margin: 0 16.5rem 0 16.5rem;
         grid-template-areas: "text review" "buyer buyer";
   }
   main .description {
@@ -334,6 +358,12 @@ main {
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .description p {
+    max-width: 38ch;
   }
   main .reviews {
     display: -webkit-box;
@@ -343,16 +373,27 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: review;
     margin: 0;
+    padding: 1.6rem 0;
   }
   main .reviews .card {
     width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2rem 2rem;
+  }
+  main .reviews .two {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  main .reviews .three {
+    margin-left: 20%;
   }
   main .reviews:first-child {
     -webkit-box-align: end;
@@ -364,5 +405,29 @@ main {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: buyer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 7.2rem 0 0 0;
+    gap: 3rem;
+  }
+  main .buyer .card {
+    padding: 4rem 3.2rem 3.5rem 3.2rem;
+  }
+  main .buyer .card * {
+    font-size: 1.3rem;
+  }
+  main .buyer .card:first-child {
+    margin-bottom: 3.2rem;
+  }
+  main .buyer .card:nth-child(2) {
+    margin-block: 1.6rem;
+  }
+  main .buyer .card:last-child {
+    margin-top: 3.2rem;
   }
 }
