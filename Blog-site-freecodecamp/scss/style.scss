@@ -2,6 +2,14 @@
 @import "config";
 
 /* Base styles */
+body {
+  font-family: $font-stack;
+  font-size: $font-size-sm;
+  color: $light-color-alt;
+  background-color: $primary-background-color;
+  letter-spacing: 1px;
+  transition: background-color 0.25s, color 0.25s;
+}
 
 /* Theme color change */
 
