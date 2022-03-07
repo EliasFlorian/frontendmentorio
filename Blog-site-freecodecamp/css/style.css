@@ -136,6 +136,7 @@ button {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 /* Custom additions below: */
@@ -179,9 +180,83 @@ body {
   transition: background-color 0.25s, color 0.25s;
 }
 
+input,
+button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+i {
+  font-size: 2.4rem;
+}
+
 /* Theme color change */
 /* Reusable classes */
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.place-items-center {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.screen-sm-hidden {
+  display: none;
+}
+
 /* Header */
+.header {
+  background-color: #252830;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-block: 1.5rem;
+}
+
+.logo {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.menu {
+  position: absolute;
+  top: 8.5rem;
+  right: 1.5rem;
+  width: 23rem;
+  padding: 1.5rem;
+  background-color: #252830;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+}
+
 /* Header JavaScript Styles */
 /* Search */
 /* Form JavaScript styles */

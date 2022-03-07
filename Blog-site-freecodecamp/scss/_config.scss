@@ -4,8 +4,8 @@ $light-color: #fff;
 $light-color-alt: #afb6cd;
 $primary-background-color: #131417;
 $secondary-background-color: #252830;
-$hover-light-color: var(--light-color);
-$hover-dark-color: var(--primary-background-color);
+$hover-light-color: $light-color;
+$hover-dark-color: $primary-background-color;
 $gradient-color: linear-gradient(
   115deg,
   #4fcf70,

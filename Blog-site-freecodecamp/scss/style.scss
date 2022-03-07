@@ -11,11 +11,80 @@ body {
   transition: background-color 0.25s, color 0.25s;
 }
 
-/* Theme color change */
+input,
+button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
 
+i {
+  font-size: $font-size-md;
+}
+
+/* Theme color change */
+body {
+  &.light-theme {
+    $light-color: #3d3d3d;
+    $light-color-alt: rgba(0, 0, 0, 0.6);
+    $primary-background-color: #fff;
+    $secondary-background-color: #f1f1f1;
+    $hover-light-color: #fff;
+    $transparent-light-color: #252830;
+    $transparent-dark-color: rgba(0, 0, 0, 0.1);
+  }
+}
 /* Reusable classes */
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.place-items-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-sm-hidden {
+  display: none;
+}
 
 /* Header */
+
+.header {
+  background-color: $secondary-background-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+}
+
+.logo {
+  font-size: $font-size-md;
+  color: $light-color;
+}
+
+.menu {
+  position: absolute;
+  top: 8.5rem;
+  right: 1.5rem;
+  width: 23rem;
+  padding: 1.5rem;
+  background-color: $secondary-background-color;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.25s ease-in;
+}
 
 /* Header JavaScript Styles */
 
