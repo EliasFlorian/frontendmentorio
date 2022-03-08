@@ -86,8 +86,57 @@ body {
   transition: opacity 0.25s ease-in;
 }
 
-/* Header JavaScript Styles */
+.list {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
 
+.menu > .list {
+  flex-direction: column;
+}
+
+.list-link.current {
+  color: $light-color;
+}
+
+.close-menu-icon {
+  display: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.list-link:hover,
+.btn:hover,
+.btn:hover span {
+  color: $light-color;
+}
+
+.moon-icon {
+  display: none;
+}
+
+.ligth-theme .sun-icon {
+  display: none;
+}
+.ligth-theme .moon-icon {
+  display: block;
+}
+/* Header JavaScript Styles */
+.header.activated {
+  box-shadow: 0 1px 0.5rem $transparent-light-color;
+}
+.menu.activated {
+  box-shadow: 1px 1px 1rem $transparent-light-color;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.menu-toggle-icon.activated .close-menu-icon {
+  display: block;
+}
 /* Search */
 
 /* Form JavaScript styles */
