@@ -134,6 +134,10 @@ body {
   transform: scale(1);
 }
 
+.menu-toggle-icon.activated .open-menu-icon {
+  display: none;
+}
+
 .menu-toggle-icon.activated .close-menu-icon {
   display: block;
 }
