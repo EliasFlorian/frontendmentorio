@@ -620,6 +620,14 @@ form {
   color: var(--light-color);
 }
 
+.swiper-pagination {
+  bottom: 0.5rem !important;
+}
+
+/* class comes form the swiper bundle js */
+.swiper-pagination-bullet {
+  background-color: var(--light-color);
+}
 /* Older posts */
 
 /* Popular tags */
