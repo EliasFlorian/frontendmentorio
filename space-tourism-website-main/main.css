@@ -81,3 +81,13 @@ select {
   border: 0;
 }
 
+.box {
+  background-color: aqua;
+  padding: 3rem;
+}
+
+.cta {
+  background-color: pink;
+  padding: 2rem;
+  border-radius: 1rem;
+}
